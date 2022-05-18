@@ -69,25 +69,69 @@ footer {
 }
 /* sidebar */
 .menu {
-  width: 2.2rem;
-  height: 2.7rem;
-  background: #262c4e;
+  margin-top:30px;
+  margin-left:10px;
+  width: 2.5rem;
+  height: 2.2rem;
+  background: white;
   border-radius: 0.5rem;
+
   position: absolute;
   top: 0.2rem;
   left: 0.2rem;
   font-family: sans-serif;
-  font-size: 2rem;
   color: #ffffff;
   text-align: center;
-  transition: left 0.7s;
+  transition: left 1s;
 }
-
+.menu h2{
+  transform:rotate(90deg);
+  margin:auto;
+  margin-top: -8px;
+  margin-bottom: -24px;
+  margin-left:5px;
+  font-size: 1.8rem;
+  color: var(--color-oscuro);
+  transition:500ms;
+}
+.menu:hover{
+  cursor: pointer;
+  background-color: var(--color-oscuro);
+  transition: 500ms;
+}
+.menu:hover > h2{
+  color: white;
+  transition:.5s;
+}
 .checkbox:checked ~ .menu {
-  left: 200px;
+  left: 188px;
   border-radius: 0 0.5rem 0.5rem 0;
+  transition:.4s;
+  background-color: var(--color-oscuro);
 }
-
+.checkbox:checked ~ .menu > h2{
+  color:white;
+}
+.checkbox:checked ~ .menu > .line_2{
+  opacity: 0;
+  transition:500ms;
+}
+.checkbox:checked ~ .menu > .line_1{
+  transform-origin: center;
+  position:absolute;
+  margin-top:2.4px;
+  margin-left:17px;
+  transform: rotate(135deg);
+  transition:500ms;
+}
+.checkbox:checked ~ .menu > .line_3{
+  position:absolute;
+  transform-origin: center;
+  margin-left:17px;
+  margin-top:-1px;
+  transform: rotate(45deg);
+  transition:500ms;
+}
 .left-panel {
   width: 200px;
   height: 100%;
