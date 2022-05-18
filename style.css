@@ -88,7 +88,7 @@ footer {
 .menu h2 {
   transform: rotate(90deg);
   margin: auto;
-  margin-top: -11px;
+  margin-top: -8px;
   margin-bottom: -24px;
   margin-left: 5px;
   font-size: 1.8rem;
@@ -127,9 +127,8 @@ footer {
 }
 .checkbox:checked ~ .menu > .line_3 {
   position: absolute;
-  transform-origin: center;
   margin-left: 17px;
-  margin-top: -1px;
+  margin-top: -2px;
   transform: rotate(45deg);
   transition: 500ms;
 }
