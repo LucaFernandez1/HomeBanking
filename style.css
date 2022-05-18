@@ -163,8 +163,27 @@ ul a {
   text-align: center;
   padding: 0 0.5rem;
   margin: 1rem 0;
+  transition: ease-in-out 300ms;
 }
 
+.submenu ul{
+  visibility: hidden;
+  opacity: 0;
+  top: 120px;
+  position:absolute;
+  transition: ease-in-out 100ms;
+}
+.submenu:focus-within > ul{
+  transition-duration: 300ms;
+  transition-delay:150ms;
+  visibility: visible;
+  opacity:1;
+  transform: translateY(50px);
+}
+.submenu:focus-within{
+  margin-bottom:130px;
+  transition: ease-in-out 300ms;
+}
 li:hover {
   opacity: 0.5;
 }
