@@ -63,6 +63,11 @@ body{
     color: white;
     margin: 16px 0;
     font-size: 16px;
+    transition: ease-in-out 150ms;
+  }
+  .form-register .botons:hover {
+    filter:brightness(125%);
+    transition: ease-in-out 150ms;
   }
 
 /*header*/
