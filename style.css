@@ -157,7 +157,7 @@ ul a {
   text-decoration: none;
 }
 
-li {
+.left-panel li {
   list-style: none;
   font-size: 20px;
   text-align: center;
@@ -168,4 +168,13 @@ li {
 li:hover {
   opacity: 0.5;
 }
+
+.submenu ul {
+  display: none;
+}
+
+.submenu:hover > ul {
+  display: contents;
+}
+
 /* sidebar */
