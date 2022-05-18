@@ -11,17 +11,30 @@
     <header>
       <!--Comienzo sidebar-->
       <input type="checkbox" class="checkbox" id="check" />
-      <label class="menu" for="check"><h2 class="line_1">|</h2><h2 class="line_2">|</h2><h2 class="line_3">|</h2></label>
+      <label class="menu" for="check">
+        <h2 class="line_1">|</h2>
+        <h2 class="line_2">|</h2>
+        <h2 class="line_3">|</h2>
+      </label>
       <div class="left-panel">
         <ul>
-          <a href="#"><li>Opcion 1</li></a>
-          <a href="#"><li>Opcion 2</li></a>
-          <a href="#"><li>Opcion 3</li></a>
-          <a href="#"><li>--------</li></a>
-          <a href="#"><li>--------</li></a>
-          <a href="#"><li>--------</li></a>
-          <a href="#"><li>--------</li></a>
-          <a href="#"><li>--------</li></a>
+          <li><a href="#">Opcion 1</a></li>
+          <li><a href="#">Opcion 2</a></li>
+          <li><a href="#">Opcion 3</a></li>
+
+          <li class="submenu">
+            <a href="#">Opcion 4</a>
+            <ul>
+              <li><a href="#">SubOp1</a></li>
+              <li><a href="#">SubOp2</a></li>
+              <li><a href="#">SubOp3</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#">Opcion x</a></li>
+          <li><a href="#">Opcion x+1</a></li>
+          <li><a href="#">Opcion x+2</a></li>
+          <li><a href="#">Opcion x+3</a></li>
         </ul>
       </div>
       <!--Fin sidebar-->

@@ -77,7 +77,8 @@ footer {
   background: white;
   border-radius: 0.5rem;
 
-  position: absolute;
+  position: fixed;
+
   top: 0.2rem;
   left: 0.2rem;
   font-family: sans-serif;
@@ -136,7 +137,7 @@ footer {
   width: 200px;
   height: 100%;
   background: linear-gradient(#262c4e, #01365c);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: -200px;
   display: flex;
@@ -156,7 +157,7 @@ ul a {
   text-decoration: none;
 }
 
-li {
+.left-panel li {
   list-style: none;
   font-size: 20px;
   text-align: center;
