@@ -80,7 +80,6 @@ footer {
 }
 .form-control {
   height: fit-content;
-  margin-top: 15px;
 }
 .offcanvas-start {
   transition: 200ms;
