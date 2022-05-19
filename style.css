@@ -92,9 +92,19 @@ footer {
 }
 .offcanvas-footer {
   position: absolute;
-  bottom: 0px;
+  bottom: 10px;
 }
 
 .offcanvas-footer a {
   color: white;
+}
+
+.list-group-item {
+  color: white;
+  background-color: transparent;
+}
+
+.list-group {
+  --bs-list-group-action-hover-bg: none;
+  border-radius: 0px;
 }
