@@ -17,7 +17,7 @@
     <header>
       <!--Comienzo sidebar-->
       <a
-        class="btn dark"
+        class="btn"
         data-bs-toggle="offcanvas"
         href="#offcanvas"
         role="button"
@@ -33,6 +33,15 @@
         aria-labelledby="offcanvasLabel"
       >
         <div class="offcanvas-header">
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn search-btn" type="submit">Search</button>
+          </form>
           <button
             type="button"
             class="btn-close text-reset"
@@ -50,14 +59,14 @@
             >
             <div class="dropdown">
               <a
-                class="list-group-item list-group-item-action"
+                class="dropdown-toggle list-group-item list-group-item-action"
                 href="#"
                 role="button"
                 id="dropdownMenuLink"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                subitems ▼
+                subitems
               </a>
 
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
