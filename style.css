@@ -1,69 +1,69 @@
-
 /*Definición de variables*/
-:root{
-    --color-oscuro: #262C4E;
-    --color-medio: #01365C;
-    --color-claro: #3273A2;
+:root {
+  --color-oscuro: #262c4e;
+  --color-medio: #01365c;
+  --color-claro: #3273a2;
 }
-body{
-    margin:0;
+body {
+  margin: 0;
 }
-header{
-    width: 100%;
-    height: 100px;
-    box-shadow:20px rgba(0,0,0,0.5);
-    display:inline-flex;
+header {
+  width: 100%;
+  height: 100px;
+  box-shadow: 20px rgba(0, 0, 0, 0.5);
+  display: inline-flex;
 }
-.logo img{
-    width: 270px;
+.logo img {
+  width: 270px;
 }
-.logo{
-    margin:auto;
-    margin-left:42%;
+.logo {
+  margin: auto;
+  margin-left: 42%;
 }
-.help{
-    font-size: 30px;
-    color:black;
-    text-decoration: none;
-    border:2px solid var(--color-oscuro);
-    border-radius:10px;
-    padding:0px 10px 0px 10px;
-    margin:auto;
-    margin-left:30%;
-    height: 35px;
+.help {
+  font-size: 30px;
+  color: black;
+  text-decoration: none;
+  border: 2px solid var(--color-oscuro);
+  border-radius: 10px;
+  padding: 0px 10px 0px 10px;
+  margin: auto;
+  margin-left: 30%;
+  height: 35px;
 }
-.log-in{
-    font-size: 30px;
-    color:black;
-    text-decoration: none;
-    border:2px solid var(--color-oscuro);
-    border-radius:10px;
-    padding:0px 5px 0px 5px;
-    margin:auto;
-    margin-left: -10px;
-    height: 35px;
+.log-in {
+  font-size: 30px;
+  color: black;
+  text-decoration: none;
+  border: 2px solid var(--color-oscuro);
+  border-radius: 10px;
+  padding: 0px 5px 0px 5px;
+  margin: auto;
+  margin-left: -10px;
+  height: 35px;
 }
-.log-in:hover, .help:hover{
-    color:white;
-    background-color: var(--color-medio);
-    transition: ease-in-out 200ms;
+.log-in:hover,
+.help:hover {
+  color: white;
+  background-color: var(--color-medio);
+  transition: ease-in-out 200ms;
 }
-main{
-    background-color: var(--color-oscuro);
-    width: 100%;
-    padding-top:17px;
-    padding-bottom:1px;
+main {
+  background-color: var(--color-oscuro);
+  width: 100%;
+  padding-top: 17px;
+  padding-bottom: 1px;
 }
-.main-box{
-    border-radius: 10px;
-    width: 65%;
-    height:400px;
-    background-color: white;
-    margin: auto;
-    margin-bottom:17px;
+.main-box {
+  border-radius: 10px;
+  width: 65%;
+  height: 400px;
+  background-color: white;
+  margin: auto;
+  margin-bottom: 17px;
 }
-footer{
-    width:100%;
-    height:250px;
-    background-color: #131629;
+footer {
+  width: 100%;
+  height: 250px;
+  background-color: #131629;
 }
