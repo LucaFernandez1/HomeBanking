@@ -1,4 +1,5 @@
 /*Definición de variables*/
+/*Definición de variables*/
 :root {
   --color-oscuro: #262c4e;
   --color-medio: #01365c;
@@ -71,6 +72,18 @@ footer {
 /* sidebar */
 .btn {
   height: fit-content;
+  margin: 15px;
+}
+
+.offcanvas-body {
+  background-image: linear-gradient(#262c4e, #01365c);
+}
+.form-control {
+  height: fit-content;
+  margin-top: 15px;
+}
+.offcanvas-start {
+  transition: 200ms;
   margin: auto;
   border: none;
 }
