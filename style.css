@@ -94,15 +94,20 @@ main {
   width:250px;
   height:250px;
   transition: 300ms;
-  filter:saturate(0) blur(3px);
+
 }
-.main-box div a div{
+.main-box div:hover > div{
+  opacity:0;
+  transition: 0ms;
+}
+.main-box div div{
   background-color: var(--color-claro);
   color: white;
   position:absolute;
   margin-left:2px;
-  margin-top:150px;
+  margin-top:145px;
   height:40px;
+  z-index: 0;
 }
 footer {
   width: 100%;
