@@ -91,3 +91,11 @@ footer {
   background-color: var(--color-oscuro);
   color: white;
 }
+.offcanvas-footer {
+  position: absolute;
+  bottom: 0px;
+}
+
+.offcanvas-footer a {
+  color: white;
+}
