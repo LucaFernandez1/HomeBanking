@@ -71,4 +71,5 @@ footer {
 /* sidebar */
 .btn {
   height: fit-content;
+  margin:auto;
 }
