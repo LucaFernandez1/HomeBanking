@@ -77,6 +77,7 @@ footer {
 
 .offcanvas-body {
   background-image: linear-gradient(#262c4e, #01365c);
+  padding: 0;
 }
 .form-control {
   height: fit-content;
@@ -105,6 +106,13 @@ footer {
 }
 
 .list-group {
-  --bs-list-group-action-hover-bg: none;
   border-radius: 0px;
+}
+.dropdown-item {
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+.dropdown-menu.show {
+  display: contents;
 }
