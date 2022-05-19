@@ -71,24 +71,10 @@ footer {
 /* sidebar */
 .btn {
   height: fit-content;
-<<<<<<< HEAD
-  margin: 15px;
+  margin: auto;
+  border: none;
 }
-
-.offcanvas-body {
-  background-image: linear-gradient(#262c4e, #01365c);
-}
-.form-control {
-  height: fit-content;
-}
-.offcanvas-start {
-  transition: 200ms;
-=======
-  margin:auto;
-  border:none;
->>>>>>> cc179599dc772a0c3ff9a5d7d6fada9c2f96b723
-}
-.btn:hover{
+.btn:hover {
   background-color: var(--color-oscuro);
-  color:white;
+  color: white;
 }
