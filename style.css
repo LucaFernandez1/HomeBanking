@@ -72,7 +72,7 @@ main {
   margin-top:125px;
   margin-left:79px;
   transition: ease-in-out 300ms;
-  z-index: 1;
+  z-index: 10;
 }
 .main-box div a img{
   object-fit:cover;
@@ -81,7 +81,7 @@ main {
   border-radius: 10px;
   transition: ease-in-out 300ms;
   border: var(--color-oscuro) solid 2px;
-  z-index: 1;
+  z-index: 10;
 }
 .main-box div:hover{
   width:250px;
