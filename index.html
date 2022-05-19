@@ -22,25 +22,31 @@
         <button class="carousel-button next" data-carousel-button="next">
           >
         </button>
-        <ol>
-          <li class="carousel-indicator"></li>
-          <li class="carousel-indicator"></li>
-          <li class="carousel-indicator"></li>
-        </ol>
-        <ul data-slides>
-          <li class="slide" data-active>
+        <ul id="indicators" data-indicators>
+          <li class="indicator" data-carousel-indicator="0" data-active>
+            <button></button>
+          </li>
+          <li class="indicator" data-carousel-indicator="1">
+            <button></button>
+          </li>
+          <li class="indicator" data-carousel-indicator="2">
+            <button></button>
+          </li>
+        </ul>
+        <ul id="slides" data-slides>
+          <li class="slide" data-carousel-slide="0" data-active>
             <img
               src="https://images.pexels.com/photos/4482900/pexels-photo-4482900.jpeg?crop=entropy&cs=srgb&dl=pexels-anna-shvets-4482900.jpg&fit=crop&fm=jpg&h=300&w=1200"
               alt=""
             />
           </li>
-          <li class="slide">
+          <li class="slide" data-carousel-slide="1">
             <img
               src="https://images.pexels.com/photos/826349/pexels-photo-826349.jpeg?crop=entropy&cs=srgb&dl=pexels-andrea-piacquadio-826349.jpg&fit=crop&fm=jpg&h=500&w=1400"
               alt=""
             />
           </li>
-          <li class="slide">
+          <li class="slide" data-carousel-slide="2">
             <img
               src="https://images.pexels.com/photos/359757/pexels-photo-359757.jpeg?cs=srgb&dl=pexels-tofroscom-359757.jpg&fm=jpg&h=300&w=1200&fit=crop"
               alt=""
