@@ -18,10 +18,10 @@ header {
 }
 .logo {
   margin: auto;
-  margin-left: 42%;
+  margin-left: 35%;
 }
 .help {
-  font-size: 30px;
+  font-size: 22px;
   color: black;
   text-decoration: none;
   border: 2px solid var(--color-oscuro);
@@ -32,7 +32,7 @@ header {
   height: 35px;
 }
 .log-in {
-  font-size: 30px;
+  font-size: 22px;
   color: black;
   text-decoration: none;
   border: 2px solid var(--color-oscuro);
@@ -71,6 +71,7 @@ footer {
 /* sidebar */
 .btn {
   height: fit-content;
+<<<<<<< HEAD
   margin: 15px;
 }
 
@@ -83,4 +84,12 @@ footer {
 }
 .offcanvas-start {
   transition: 200ms;
+=======
+  margin:auto;
+  border:none;
+>>>>>>> cc179599dc772a0c3ff9a5d7d6fada9c2f96b723
+}
+.btn:hover{
+  background-color: var(--color-oscuro);
+  color:white;
 }
