@@ -7,6 +7,14 @@ const indicators = document
   .querySelector("[data-carousel]")
   .querySelector("[data-indicators]");
 
+var slideTimer;
+
+window.onload = setTimer();
+
+function setTimer() {
+  slideTimer = setInterval(slideSelf, 6000);
+}
+
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
     const offset = button.dataset.carouselButton === "next" ? 1 : -1;
@@ -21,19 +29,25 @@ buttons.forEach((button) => {
     indicators.children[newIndex].dataset.active = true;
     delete activeSlide.dataset.active;
     delete activeIndicator.dataset.active;
+    clearInterval(slideTimer);
+    slideTimer = setInterval(slideSelf, 6000);
   });
 });
 
 indicatorButtons.forEach((indicator) => {
   indicator.addEventListener("click", () => {
-    const selectedIndicator = indicator.dataset.carouselIndicator;
+    const newIndex = indicator.dataset.carouselIndicator;
     const activeSlide = slides.querySelector("[data-active]");
     const activeIndicator = indicators.querySelector("[data-active]");
 
-    slides.children[selectedIndicator].dataset.active = true;
-    indicators.children[selectedIndicator].dataset.active = true;
-    delete activeSlide.dataset.active;
-    delete activeIndicator.dataset.active;
+    if (activeIndicator.dataset.carouselIndicator != newIndex) {
+      slides.children[newIndex].dataset.active = true;
+      indicators.children[newIndex].dataset.active = true;
+      delete activeSlide.dataset.active;
+      delete activeIndicator.dataset.active;
+      clearInterval(slideTimer);
+      slideTimer = setInterval(slideSelf, 6000);
+    }
   });
 });
 
@@ -51,7 +65,3 @@ function slideSelf() {
   delete activeSlide.dataset.active;
   delete activeIndicator.dataset.active;
 }
-
-var intervalId = window.setInterval(function () {
-  slideSelf();
-}, 6000);
