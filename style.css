@@ -62,7 +62,6 @@ main {
   margin: auto;
   margin-bottom: 17px;
 }
-
 .main-box div{
   display: inline-flex;
   background-color: var(--color-oscuro);
