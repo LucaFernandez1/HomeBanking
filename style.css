@@ -63,6 +63,7 @@ main {
   margin: auto;
   margin-bottom: 17px;
 }
+
 .main-box div {
   display: inline-flex;
   background-color: var(--color-oscuro);
@@ -78,11 +79,13 @@ main {
   object-fit: cover;
   width: 150px;
   height: 150px;
+
   border-radius: 10px 10px 0px 0px;
   transition: ease-in-out 300ms;
   border: var(--color-oscuro) solid 2px;
   z-index: 10;
 }
+
 .main-box div:hover {
   width: 250px;
   height: 250px;
@@ -90,12 +93,14 @@ main {
   margin-left: 30px;
   margin-right: -55px;
 }
+
 .main-box div:hover > a > img {
   width: 250px;
   height: 250px;
   transition: 300ms;
   border-radius: 10px;
 }
+
 .main-box div:hover > div {
   opacity: 0;
   transform: translateY(-5px);
@@ -104,6 +109,7 @@ main {
   height: 20px;
   visibility: hidden;
 }
+
 .main-box div div {
   background-color: var(--color-oscuro);
   border-radius: 0px 0px 10px 10px;
@@ -119,6 +125,7 @@ main {
   transition-delay: 200ms;
   pointer-events: none;
 }
+
 footer {
   width: 100%;
   height: 250px;
@@ -174,6 +181,7 @@ footer {
 .list-group {
   border-radius: 0px;
 }
+
 .dropdown-item {
   width: 100%;
   color: white;
@@ -183,6 +191,7 @@ footer {
 .dropdown-item {
   transition: 150ms;
 }
+
 .dropdown-menu.show {
   display: contents;
 }
