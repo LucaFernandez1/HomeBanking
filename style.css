@@ -90,6 +90,7 @@ footer {
 .btn:hover {
   background-color: var(--color-oscuro);
   color: white;
+  transition: 200ms;
 }
 .offcanvas-footer {
   position: absolute;
@@ -120,7 +121,11 @@ footer {
 .dropdown-item {
   width: 100%;
   color: white;
-  text-align: center;
+  text-align: left;
+}
+.dropdown-toggle,
+.dropdown-item {
+  transition: 150ms;
 }
 .dropdown-menu.show {
   display: contents;
