@@ -11,11 +11,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="carousel/carousel.css" />
+    <script src="carousel/image-sliding.js" defer></script>
     <title>ITBANK</title>
   </head>
   <body>
+    <!-- Header Bar -->
     <header>
-      <!--Comienzo sidebar-->
+      <!-- Sidebar -->
       <a
         class="btn"
         data-bs-toggle="offcanvas"
@@ -190,14 +193,63 @@
           </div>
         </div>
       </div>
-      <!--Fin sidebar-->
+      <!-- Sidebar End-->
 
+      <!-- ITBANK Logo -->
       <a class="logo" href="#blank"><img src="ITBA-logo.png" /></a>
+      
+      <!-- Help Button -->
       <a class="help" href="#blank">?</a>
+      
+      <!-- Loggin Button -->
       <a class="log-in" href="#blank">Log In</a>
     </header>
+
+    <!-- Main Content -->
     <main>
-      <div class="main-box"></div>
+      <!-- Carrousel -->
+      <div class="carousel" data-carousel>
+        <button class="carousel-button prev" data-carousel-button="prev">
+          <
+        </button>
+        <button class="carousel-button next" data-carousel-button="next">
+          >
+        </button>
+        <ul id="indicators" data-indicators>
+          <li class="indicator" data-carousel-indicator="0" data-active>
+            <button></button>
+          </li>
+          <li class="indicator" data-carousel-indicator="1">
+            <button></button>
+          </li>
+          <li class="indicator" data-carousel-indicator="2">
+            <button></button>
+          </li>
+        </ul>
+        <ul id="slides" data-slides>
+          <li class="slide" data-carousel-slide="0" data-active>
+            <img
+              src="https://images.pexels.com/photos/4482900/pexels-photo-4482900.jpeg?crop=entropy&cs=srgb&dl=pexels-anna-shvets-4482900.jpg&fit=crop&fm=jpg&h=300&w=1200"
+              alt=""
+            />
+          </li>
+          <li class="slide" data-carousel-slide="1">
+            <img
+              src="https://images.pexels.com/photos/826349/pexels-photo-826349.jpeg?crop=entropy&cs=srgb&dl=pexels-andrea-piacquadio-826349.jpg&fit=crop&fm=jpg&h=500&w=1400"
+              alt=""
+            />
+          </li>
+          <li class="slide" data-carousel-slide="2">
+            <img
+              src="https://images.pexels.com/photos/359757/pexels-photo-359757.jpeg?cs=srgb&dl=pexels-tofroscom-359757.jpg&fm=jpg&h=300&w=1200&fit=crop"
+              alt=""
+            />
+          </li>
+        </ul>
+      </div>
+      <!-- Carrousel End -->
+
+      <!-- Secciones -->
       <div class="main-box" id="secciones">
         <div class="saldo">
           <a href="#">
@@ -236,6 +288,8 @@
           <div>SEGUROS</div>
         </div>
       </div>
+      <!-- Secciones End -->
+        
       <div class="main-box"></div>
     </main>
     <footer></footer>
