@@ -1,3 +1,5 @@
-fetch((src = "https://nova.bitcambio.com.br/api/v3/public/getassets"))
+fetch((src = "https://www.dolarsi.com/api/api.php?type=valoresprincipales"))
   .then((res) => res.json())
-  .then((datos) => {});
+  .then((datos) => {
+    console.log(datos);
+  });
