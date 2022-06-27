@@ -17,6 +17,9 @@ header {
   display: inline-flex;
 }
 
+footer {
+  display: none;
+}
 .logo img {
   width: 270px;
 }
@@ -60,21 +63,25 @@ header {
 main {
   background-color: var(--color-oscuro);
   width: 100%;
-  padding-top:10px;
+  padding-top: 10px;
   padding-bottom: 10px;
-  height:1000px;
+  height: 100%;
 }
 
 .main-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   border-radius: 10px;
-  width: 65%;
-  height: 400px;
+  width: 90%;
+  height: auto;
   background-color: white;
   margin: auto;
   margin-bottom: 17px;
+  margin-top: 17px;
 }
 
-main ul li img{
+main ul li img {
   border-radius: 10px;
 }
 
@@ -84,10 +91,8 @@ main ul li img{
   border-radius: 10px;
   width: 150px;
   height: 150px;
-  margin-top: 125px;
-  margin-left: 79px;
+  margin: 50px;
   transition: ease-in-out 300ms;
-  z-index: 10;
 }
 
 .main-box div a img {
@@ -101,17 +106,13 @@ main ul li img{
 }
 
 .main-box div:hover {
-  width: 250px;
-  height: 250px;
-  margin-top: 72px;
-  margin-left: 30px;
-  margin-right: -55px;
+  transform: scale(1.2);
+  transition: ease-in-out 200ms;
 }
 
 .main-box div:hover > a > img {
-  width: 250px;
-  height: 250px;
-  transition: 300ms;
+  transform: scale(1.2);
+  transition: ease-in-out 200ms;
   border-radius: 10px;
 }
 
@@ -146,7 +147,7 @@ footer {
   background-color: #131629;
 }
 
-.indicator{
+.indicator {
   color: #131629;
 }
 
