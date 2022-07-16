@@ -94,7 +94,7 @@ main ul li img {
   border-radius: 10px;
 }
 
-.main-box div {
+#secciones div {
   display: inline-flex;
   background-color: var(--color-oscuro);
   border-radius: 10px;
@@ -104,7 +104,7 @@ main ul li img {
   transition: ease-in-out 300ms;
 }
 
-.main-box div a img {
+#secciones div a img {
   object-fit: cover;
   width: 150px;
   height: 150px;
@@ -114,18 +114,18 @@ main ul li img {
   z-index: 10;
 }
 
-.main-box div:hover {
+#secciones div:hover {
   transform: scale(1.2);
   transition: ease-in-out 200ms;
 }
 
-.main-box div:hover > a > img {
+#secciones div:hover > a > img {
   transform: scale(1.2);
   transition: ease-in-out 200ms;
   border-radius: 10px;
 }
 
-.main-box div:hover > div {
+#secciones div:hover > div {
   opacity: 0;
   transform: translateY(-5px);
   transition: 100ms;
@@ -134,7 +134,7 @@ main ul li img {
   visibility: hidden;
 }
 
-.main-box div div {
+#secciones div div {
   background-color: var(--color-oscuro);
   border-radius: 0px 0px 10px 10px;
   color: white;
@@ -148,12 +148,6 @@ main ul li img {
   font-family: sans-serif;
   transition-delay: 200ms;
   pointer-events: none;
-}
-
-footer {
-  width: 100%;
-  height: 250px;
-  background-color: #131629;
 }
 
 .indicator {
@@ -225,4 +219,43 @@ footer {
 
 .dropdown-menu.show {
   display: contents;
+}
+/*VALORES DOLAR*/
+
+#dolar_contenedor {
+  display: block;
+}
+
+.dolar-contenido {
+  background-color: #e4e8d1;
+  display: flex;
+  justify-content: center;
+}
+
+.dolar {
+  display: inline-block;
+  text-align: center;
+  margin: 5px;
+}
+.dolar-h {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: white;
+  background-color: #728176;
+}
+.compra,
+.venta {
+  color: #728176;
+  background-color: #e4e8d1;
+  text-align: center;
+  width: 40%;
+}
+.d-fecha {
+  color: white;
+  background-color: #728176;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }

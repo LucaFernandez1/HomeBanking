@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="carousel/carousel.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="carousel/image-sliding.js" defer></script>
     <title>ITBANK</title>
   </head>
@@ -298,9 +299,88 @@
       </div>
       <!-- Secciones End -->
 
-      <div class="main-box"></div>
+      <!-- Precio del Dolar-->
+      <div id="dolar_contenedor" class="container main-box">
+        <h3 class="text-center">Precio del dolar hoy en Argentina</h1>
+        <div class="row justify-content-center">
+          <div class="col-4 dolar">
+            <div class="dolar-h">
+              <img src="../../global-imgs/dolar.png">
+              DOLAR OFICIAL
+            </div>
+            <div class="dolar-contenido">
+              <div class="compra">
+                <div>COMPRA</div>
+                <div id="valor-of-c"></div>
+              </div>
+              <div class="venta">
+                <div>VENTA</div>
+                <div id="valor-of-v"></div>
+              </div>
+            </div>
+            <div class="dolar-f">
+              <div id="variacion-of"></div>
+              <div class="d-fecha">ACTUALIZADO: <script> document.write(new Date().toLocaleDateString()); </script></div>
+            </div>
+          </div>
+          <div class="col-4 dolar">
+            <div class="dolar-h">
+              <img src="../../global-imgs/dolarB.png">
+              DOLAR BLUE
+            </div>
+            <div class="dolar-contenido">
+              <div class="compra">
+                <div>COMPRA</div>
+                <div id="valor-blue-c"></div>
+              </div>
+              <div class="venta">
+                <div>VENTA</div>
+                <div id="valor-blue-v"></div>
+              </div>
+            </div>
+            <div class="dolar-f">
+              <div id="variacion-blue"></div>
+              <div class="d-fecha">ACTUALIZADO: <script> document.write(new Date().toLocaleDateString()); </script></div>
+            </div>
+          </div>
+          <div class="col-4 dolar">
+            <div class="dolar-h">
+              <img src="../../global-imgs/cliqui.png">
+              CONTADO CON LIQUI
+            </div>
+            <div class="dolar-contenido">
+              <div class="venta">
+                <div>REFERENCIA</div>
+                <div id="valor-liqui-v"></div>
+              </div>
+            </div>
+            <div class="dolar-f">
+              <div id="variacion-t"></div>
+              <div class="d-fecha">ACTUALIZADO: <script> document.write(new Date().toLocaleDateString()); </script></div>
+            </div>
+          </div>
+          <div class="col-4 dolar">
+            <div class="dolar-h">
+              <img src="../../global-imgs/turista.png">
+              DOLAR TURISTA
+            </div>
+            <div class="dolar-contenido">
+              <div class="venta">
+                <div>VENTA</div>
+                <div id="valor-t-v"></div>
+              </div>
+            </div>
+            <div class="dolar-f">
+              <div id="variacion-t"></div>
+              <div class="d-fecha">ACTUALIZADO: <script> document.write(new Date().toLocaleDateString()); </script></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fin precio del Dolar-->
     </main>
-    <footer></footer>
+    
+    <script src="index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
